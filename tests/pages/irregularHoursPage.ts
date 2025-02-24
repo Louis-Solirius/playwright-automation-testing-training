@@ -27,7 +27,7 @@ class IrregularHoursPage {
     }
 
     async fillOutFields(page: Page, workIrregularHours: boolean): Promise<void> {
-        await page.click( workIrregularHours ? 'label[for="response-0"]' : 'label[for="response-1"]');
+        await page.click( workIrregularHours ? this.radioYes : this.radioNo);
 
         await page.getByRole("button", { name: "Continue" }).click();
     }
