@@ -1,0 +1,16 @@
+{
+  "name": "playwright-training",
+  "packageManager": "yarn@4.6.0",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5",
+    "playwright": "^1.50.1",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "testChrome": "playwright test --project chromium --headed",
+    "testFirefox": "playwright test --project firefox --headed",
+    "testEdge": "playwright test --project edge --headed"
+  }
+}
